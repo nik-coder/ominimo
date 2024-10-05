@@ -17,9 +17,9 @@ php artisan ui bootstrap --auth
 npm install && npm run dev
 php artisan migrate
 
-1b. pull repo with git
+1b. clone GitHub repository with git
 
-git pull ....
+git clone https://github.com/nik-coder/ominimo.git
 
 2. Create database migrations:
 
@@ -27,3 +27,18 @@ Create migrations for posts and comments:
 
 php artisan make:migration create_posts_table
 php artisan make:migration create_comments_table
+
+then,
+
+Run the migrations:
+
+php artisan migrate
+
+3. Start Laravel project
+
+php artisan serve
+
+Browse http://localhost:8000
+
+Note: this is just a skeleton of the Simple Blog Application with Laravel, for more complex solution we need frontend development so we have UI and we could browse the app.
+
